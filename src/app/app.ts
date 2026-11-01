@@ -1,20 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  templateUrl: './app.html',
-  styleUrl: './app.css',
+  imports: [RouterOutlet],
+  template: '<router-outlet />',
 })
-export class App {
-  protected isMenuOpen = false;
-  protected readonly currentYear = new Date().getFullYear();
-
-  protected toggleMenu(): void {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
-
-  protected closeMenu(): void {
-    this.isMenuOpen = false;
-  }
-}
+export class App {}

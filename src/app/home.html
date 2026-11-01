@@ -1,0 +1,904 @@
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Snehal Chauhan home">
+    <span class="brand-mark" aria-hidden="true">SC</span>
+    <span>Snehal Chauhan</span>
+  </a>
+
+  <button
+    class="menu-toggle"
+    type="button"
+    [attr.aria-expanded]="isMenuOpen"
+    aria-controls="primary-navigation"
+    (click)="toggleMenu()"
+  >
+    <span class="sr-only">Toggle navigation</span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </button>
+
+  <nav id="primary-navigation" class="navigation" [class.is-open]="isMenuOpen" aria-label="Primary navigation">
+    <a href="#home" (click)="closeMenu()">Home</a>
+    <a href="#about" (click)="closeMenu()">About</a>
+    <a href="#experience" (click)="closeMenu()">Experience</a>
+    <a href="#projects" (click)="closeMenu()">Projects</a>
+    <a href="https://leetcode.com/u/snehalchauhan/" target="_blank" rel="noopener noreferrer">LeetCode ↗</a>
+    <a href="#contact" (click)="closeMenu()">Contact</a>
+    <a class="nav-cta" href="#contact" (click)="closeMenu()">Contact <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="hero section-shell" aria-label="Introduction">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Software Developer · Available for opportunities</p>
+      <h1>Backend systems and web apps<br /><span>built for reliable performance.</span></h1>
+      <p class="hero-summary">
+        I'm Snehal Chauhan, a Software Developer with 4 years of experience in C#, .NET, Angular, REST APIs, and SQL-driven applications.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#projects">Review engineering work <span aria-hidden="true">↓</span></a>
+        <a class="text-link" href="https://github.com/snehalchauhan17" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-meta">
+        <div>
+          <strong>20+</strong>
+          <span>REST APIs developed</span>
+        </div>
+        <div>
+          <strong>25%</strong>
+          <span>Faster high-volume transactions</span>
+        </div>
+        <div>
+          <strong>30–40%</strong>
+          <span>Faster SQL reporting</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+  <div class="photo-glow"></div>
+
+  <div class="profile-frame">
+    <img
+       src="/Images/profile.png"
+      alt="Snehal Chauhan - .NET Software Developer"
+      class="profile-image"
+    />
+  </div>
+
+  <div class="floating-tag tag-api">ASP.NET Core</div>
+  <div class="floating-tag tag-dotnet">C# / .NET</div>
+  <div class="floating-tag tag-angular">Angular</div>
+
+  <div class="profile-caption">
+    <span>SOFTWARE ENGINEER</span>
+    <strong>Engineering solutions that matter.</strong>
+  </div>
+</div>
+  </section>
+
+  <section id="about" class="about section-shell" aria-labelledby="about-heading">
+    <div class="section-heading">
+      <p class="eyebrow">01 / About</p>
+      <h2 id="about-heading">Practical engineering,<br />measurable improvement.</h2>
+    </div>
+    <div class="about-content">
+      <p class="about-lead">
+        I build backend services and web applications, focusing on the API, data-access, performance, and user-facing layers that make a product work well.
+      </p>
+      <p>
+        My toolkit is grounded in .NET, Angular, SQL, and practices including Clean Architecture and SOLID. The work is concrete: 20+ REST APIs developed, transaction response time reduced by 25%, and SQL Server report performance improved by 30–40%.
+      </p>
+      <a class="text-link" href="#experience">See the evidence <span aria-hidden="true">↘</span></a>
+    </div>
+  </section>
+
+  <section id="focus" class="capabilities section-shell" aria-labelledby="focus-heading">
+    <div class="section-heading">
+      <p class="eyebrow">02 / Engineering focus</p>
+      <h2 id="focus-heading">What I build,<br />and the proof behind it.</h2>
+    </div>
+    <div class="capability-grid">
+      <article class="capability-card">
+        <div class="card-icon icon-blue" aria-hidden="true">&lt;/&gt;</div>
+        <p class="capability-label">API design</p>
+        <h3>Backend application services</h3>
+        <p>Developed 20+ REST APIs using a .NET-focused toolkit that includes ASP.NET Core MVC, Dapper, and EF Core.</p>
+      </article>
+      <article class="capability-card">
+        <div class="card-icon icon-cyan" aria-hidden="true">◇</div>
+        <p class="capability-label">Performance</p>
+        <h3>Data and response-time tuning</h3>
+        <p>Reduced high-volume transaction response time by 25% and improved SQL Server report performance by 30–40%.</p>
+      </article>
+      <article class="capability-card">
+        <div class="card-icon icon-purple" aria-hidden="true">▤</div>
+        <p class="capability-label">Identity workflows</p>
+        <h3>Verification-aware application flows</h3>
+        <p>KRP includes SSO/Citizen login, eKYC, and beneficiary verification for PFMS workflows.</p>
+      </article>
+      <article class="capability-card">
+        <div class="card-icon icon-green" aria-hidden="true">↗</div>
+        <p class="capability-label">Reliability &amp; architecture</p>
+        <h3>Maintainable operational systems</h3>
+        <p>Worked with microservices, Clean Architecture, SOLID principles, Linux, NGINX, and Azure DevOps fundamentals to support maintainable application delivery.</p>
+      </article>
+    </div>
+  </section>
+
+<!-- EXPERIENCE SECTION -->
+<section
+  id="experience"
+  class="experience-v2 section-shell"
+  aria-labelledby="experience-heading"
+>
+  <div class="experience-header">
+    <div class="section-heading">
+      <p class="eyebrow">03 / Professional experience</p>
+      <h2 id="experience-heading">
+        Building software.<br />
+        <span>Improving outcomes.</span>
+      </h2>
+    </div>
+
+    <p class="experience-intro">
+      My professional journey spans backend development, full-stack
+      application features, database optimization, and production support.
+      Here are the roles and contributions behind that experience.
+    </p>
+  </div>
+
+  <div class="experience-timeline">
+
+    <!-- ROLE 01: CURRENT -->
+    <article class="experience-entry experience-entry-current">
+      <div class="experience-period">
+        <span class="period-dot"></span>
+        <span>Apr 2026 — Present</span>
+        <span class="period-status">Current</span>
+      </div>
+
+      <div class="experience-card">
+        <div class="experience-card-header">
+          <div>
+            <p class="experience-role-label">Software Developer</p>
+            <h3>Dev Information Technology Ltd.</h3>
+            <p class="experience-location">Professional experience · India</p>
+          </div>
+
+          <div class="experience-company-mark" aria-hidden="true">DEV</div>
+        </div>
+
+        <p class="experience-description">
+          Working on backend application development, feature delivery,
+          modular components, and database-operation automation in an
+          Agile team.
+        </p>
+
+        <div class="experience-highlights">
+          <div class="experience-highlight">
+            <span class="highlight-number">03+</span>
+            <span class="highlight-description">
+              Major features delivered ahead of schedule
+            </span>
+          </div>
+
+          <div class="experience-highlight">
+            <span class="highlight-number">20%</span>
+            <span class="highlight-description">
+              Reduction in bug-resolution time
+            </span>
+          </div>
+        </div>
+
+        <ul class="experience-achievements">
+          <li>
+            Delivered 3+ major features ahead of schedule using .NET Core
+            APIs and ASP.NET Core MVC.
+          </li>
+          <li>
+            Reduced bug-resolution time by 20% by building modular backend
+            components aligned with Clean Architecture.
+          </li>
+          <li>
+            Supported database-operation automation and deployments as
+            part of a 2-member Agile team.
+          </li>
+        </ul>
+
+        <div class="experience-tech">
+          <span>C#</span>
+          <span>.NET Core</span>
+          <span>ASP.NET Core MVC</span>
+          <span>Clean Architecture</span>
+          <span>SQL</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- ROLE 02: XTRANET -->
+    <article class="experience-entry">
+      <div class="experience-period">
+        <span class="period-dot"></span>
+        <span>Sep 2022 — Mar 2026</span>
+      </div>
+
+      <div class="experience-card">
+        <div class="experience-card-header">
+          <div>
+            <p class="experience-role-label">Software Developer</p>
+            <h3>Xtranet Technologies Pvt. Ltd.</h3>
+            <p class="experience-location">Previous employment</p>
+          </div>
+
+          <div class="experience-company-mark" aria-hidden="true">XT</div>
+        </div>
+
+        <p class="experience-description">
+          Developed and maintained web applications and production APIs,
+          combining .NET and Node.js backend services with Angular modules
+          and SQL Server data operations.
+        </p>
+
+        <div class="experience-highlights">
+          <div class="experience-highlight">
+            <span class="highlight-number">20+</span>
+            <span class="highlight-description">
+              Production REST APIs developed
+            </span>
+          </div>
+
+          <div class="experience-highlight">
+            <span class="highlight-number">25%</span>
+            <span class="highlight-description">
+              Faster API response performance
+            </span>
+          </div>
+
+          <div class="experience-highlight">
+            <span class="highlight-number">30–40%</span>
+            <span class="highlight-description">
+              Improvement in SQL reporting performance
+            </span>
+          </div>
+        </div>
+
+        <ul class="experience-achievements">
+          <li>
+            Developed 20+ production REST APIs using .NET Core 8 and
+            Node.js, contributing to 25% faster API response performance.
+          </li>
+          <li>
+            Built Angular modules with JWT-based role authorization for
+            applications supporting 1,000+ daily active users.
+          </li>
+          <li>
+            Improved SQL Server reporting performance by 30–40% through
+            query, index, and stored-procedure optimization.
+          </li>
+          <li>
+            Supported production deployments on Red Hat Linux using NGINX.
+          </li>
+          <li>
+            Applied OOP, SOLID, Dependency Injection, LINQ, and
+            asynchronous programming to build reusable backend components.
+          </li>
+          <li>
+            Participated in code reviews, manual testing, debugging, and
+            Agile/Scrum discussions.
+          </li>
+        </ul>
+
+        <div class="experience-tech">
+          <span>C#</span>
+          <span>.NET Core 8</span>
+          <span>Node.js</span>
+          <span>Angular</span>
+          <span>REST APIs</span>
+          <span>JWT</span>
+          <span>SQL Server</span>
+          <span>Red Hat Linux</span>
+          <span>NGINX</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- ROLE 03: INTERNSHIP -->
+    <article class="experience-entry">
+      <div class="experience-period">
+        <span class="period-dot"></span>
+        <span>Jun 2022 — Aug 2022</span>
+      </div>
+
+      <div class="experience-card">
+        <div class="experience-card-header">
+          <div>
+            <p class="experience-role-label">Software Intern</p>
+            <h3>Evision IT Solutions</h3>
+            <p class="experience-location">Early career experience</p>
+          </div>
+
+          <div class="experience-company-mark" aria-hidden="true">EV</div>
+        </div>
+
+        <p class="experience-description">
+          Started my professional development journey by contributing to
+          .NET Core backend APIs and Angular user-interface components.
+        </p>
+
+        <ul class="experience-achievements">
+          <li>
+            Developed .NET Core APIs and Angular UI components.
+          </li>
+          <li>
+            Supported application testing, debugging, and SQL query
+            optimization.
+          </li>
+        </ul>
+
+        <div class="experience-tech">
+          <span>C#</span>
+          <span>.NET Core</span>
+          <span>Angular</span>
+          <span>SQL Server</span>
+          <span>Debugging</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="experience-footer">
+    <span class="experience-footer-line"></span>
+    <p>
+      Focused on maintainable code, measurable performance improvements,
+      and dependable application delivery.
+    </p>
+    <span class="experience-footer-line"></span>
+  </div>
+</section>
+  
+
+<section id="projects" class="projects section-shell" aria-labelledby="projects-heading">
+
+  <div class="projects-header">
+    <div class="section-heading">
+      <p class="eyebrow">04 / Selected work</p>
+      <h2 id="projects-heading">
+        Engineering experience,<br />
+        demonstrated through projects.
+      </h2>
+    </div>
+
+    <p class="projects-intro">
+      A selection of enterprise applications and backend systems
+      showcasing my experience in .NET development, API design,
+      authentication, database optimization, full-stack engineering,
+      and AI integration.
+    </p>
+  </div>
+
+  <div class="project-grid">
+
+    <!-- PROJECT 01: KRP -->
+    <article class="project-card project-krp">
+      <div class="project-number">01</div>
+
+      <div class="project-art art-krp" aria-hidden="true">
+        <div class="art-card art-card-main">
+          <span class="art-card-label">KRP</span>
+          <div class="art-lines">
+            <i></i><i></i><i></i>
+          </div>
+        </div>
+
+        <div class="art-flow">
+          <span></span><b></b><span></span><b></b><span></span>
+        </div>
+
+        <div class="art-card art-card-small">
+          <span>SSO</span>
+          <span>eKYC</span>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <p class="project-type">
+          Government services · Enterprise application
+        </p>
+
+        <h3>KRP</h3>
+
+        <p class="project-description">
+          Enterprise application workflows supporting secure
+          citizen authentication, identity verification, and
+          government beneficiary validation.
+        </p>
+
+        <dl class="project-case-study">
+          <div>
+            <dt>Scope</dt>
+            <dd>
+              Developed and enhanced enterprise workflows covering
+              Single Sign-On (SSO), Citizen Authentication, eKYC
+              integration, and PFMS beneficiary verification.
+            </dd>
+          </div>
+
+          <div>
+            <dt>Engineering solution</dt>
+            <dd>
+              Implemented backend functionality using ASP.NET Core MVC
+              and microservices architecture, applying Clean Architecture
+              and SOLID principles to build modular and maintainable
+              application components.
+            </dd>
+          </div>
+
+          <div>
+            <dt>Performance impact</dt>
+            <dd>
+              Reduced database query latency by 25% through
+              Dapper-based data access, SQL query tuning,
+              and efficient data retrieval.
+            </dd>
+          </div>
+        </dl>
+
+        <div class="tag-list">
+          <span>.NET Core 10</span>
+          <span>ASP.NET Core MVC</span>
+          <span>Microservices</span>
+          <span>Clean Architecture</span>
+          <span>SQL Server</span>
+          <span>Dapper</span>
+          <span>SSO</span>
+          <span>eKYC</span>
+          <span>PFMS</span>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- PROJECT 02: WORKFORCE360 -->
+    <article class="project-card project-workforce">
+      <div class="project-number">02</div>
+
+      <div class="project-art art-workforce">
+        <div class="workforce-dashboard">
+          <div class="dashboard-top">
+            <span>WORKFORCE360</span>
+            <span class="dashboard-status">● APPLICATION PREVIEW</span>
+          </div>
+
+          <div class="dashboard-content">
+            <div class="dashboard-sidebar">
+              <i></i><i></i><i></i><i></i>
+            </div>
+
+            <div class="dashboard-main">
+              <div class="dashboard-heading"></div>
+
+              <div class="dashboard-stats">
+                <i></i><i></i><i></i>
+              </div>
+
+              <div class="dashboard-chart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <p class="project-type">
+          Independent project · AI-powered workforce management
+        </p>
+
+        <h3>Workforce360</h3>
+
+        <p class="project-description">
+          An enterprise workforce management portfolio application
+          demonstrating modern .NET development, secure API access,
+          and AI-assisted interaction with application data.
+        </p>
+
+        <dl class="project-case-study">
+          <div>
+            <dt>Scope</dt>
+            <dd>
+              Developed employee, department, and leave-related
+              functionality with authenticated API access.
+            </dd>
+          </div>
+
+          <div>
+            <dt>Engineering solution</dt>
+            <dd>
+              Built an ASP.NET Core API with Angular, SQL Server,
+              Entity Framework Core, and JWT authentication.
+              Integrated OpenAI and MCP-based tool discovery
+              and invocation.
+            </dd>
+          </div>
+
+          <div>
+            <dt>Engineering focus</dt>
+            <dd>
+              Explored backend architecture, authentication,
+              AI tool orchestration, service integration,
+              Docker-based development, and automated testing.
+            </dd>
+          </div>
+        </dl>
+
+        <div class="tag-list">
+          <span>.NET 10</span>
+          <span>ASP.NET Core</span>
+          <span>Angular</span>
+          <span>SQL Server</span>
+          <span>EF Core</span>
+          <span>JWT</span>
+          <span>OpenAI</span>
+          <span>MCP</span>
+          <span>Docker</span>
+          <span>xUnit</span>
+        </div>
+
+        <a
+          class="text-link"
+          href="https://github.com/snehalchauhan17/Workforce360"
+          target="_blank"
+          rel="noopener noreferrer">
+          Explore GitHub repository ↗
+        </a>
+        <a class="text-link case-study-project-link" href="/case-study">Read Workforce360 case study ↓</a>
+      </div>
+    </article>
+
+
+    <!-- PROJECT 03: EHRMS -->
+    <article class="project-card project-ehrms">
+      <div class="project-number">03</div>
+
+      <div class="project-art art-ehrms" aria-hidden="true">
+        <div class="ehrms-dashboard">
+          <div class="ehrms-header">
+            <span>EHRMS</span>
+            <span class="ehrms-status">HUMAN RESOURCE MANAGEMENT</span>
+          </div>
+
+          <div class="ehrms-body">
+            <div class="ehrms-sidebar">
+              <i></i><i></i><i></i><i></i>
+            </div>
+
+            <div class="ehrms-main">
+              <div class="ehrms-title"></div>
+
+              <div class="ehrms-stats">
+                <div>
+                  <strong>HR</strong>
+                  <span>Employees</span>
+                </div>
+                <div>
+                  <strong>LV</strong>
+                  <span>Leave</span>
+                </div>
+                <div>
+                  <strong>AD</strong>
+                  <span>Admin</span>
+                </div>
+              </div>
+
+              <div class="ehrms-table">
+                <i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <p class="project-type">
+          Human resources · Enterprise application
+        </p>
+
+        <h3>EHRMS</h3>
+
+        <p class="project-description">
+          Employee Human Resource Management System developed
+          to streamline employee administration and HR-related
+          business workflows.
+        </p>
+
+        <dl class="project-case-study">
+          <div>
+            <dt>Scope</dt>
+            <dd>
+              Developed 5+ HR application modules supporting
+              employee and administrative workflows.
+            </dd>
+          </div>
+
+          <div>
+            <dt>Engineering solution</dt>
+            <dd>
+              Implemented ASP.NET MVC architecture using
+              Controllers, Models, Views, C#, and SQL Server,
+              including server-side business logic and
+              role-specific functionality.
+            </dd>
+          </div>
+
+          <div>
+            <dt>Engineering contribution</dt>
+            <dd>
+              Optimized SQL queries, developed reusable UI
+              and backend components, mentored junior developers,
+              and supported debugging and application maintenance.
+            </dd>
+          </div>
+        </dl>
+
+        <div class="tag-list">
+          <span>C#</span>
+          <span>ASP.NET MVC</span>
+          <span>MVC Architecture</span>
+          <span>SQL Server</span>
+          <span>T-SQL</span>
+          <span>Query Optimization</span>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- PROJECT 04: RECORD MANAGEMENT SYSTEM -->
+    <article class="project-card project-rms">
+      <div class="project-number">04</div>
+
+      <div class="project-art art-rms" aria-hidden="true">
+        <div class="folder folder-back"></div>
+
+        <div class="folder folder-front">
+          <div class="folder-tab"></div>
+
+          <div class="document">
+            <i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+
+        <span class="art-node node-one">M</span>
+        <span class="art-node node-two">A</span>
+        <span class="art-node node-three">N</span>
+      </div>
+
+      <div class="project-content">
+        <p class="project-type">
+          Document management · Full-stack application
+        </p>
+
+        <h3>Record Management System</h3>
+
+        <p class="project-description">
+          A web-based record management application designed
+          to simplify document operations and reduce manual
+          record-keeping effort.
+        </p>
+
+        <dl class="project-case-study">
+          <div>
+            <dt>Scope</dt>
+            <dd>
+              Developed record creation, retrieval, and management
+              functionality through responsive web application
+              components and backend services.
+            </dd>
+          </div>
+
+          <div>
+            <dt>Engineering solution</dt>
+            <dd>
+              Built Angular UI components and Node.js services,
+              integrated MongoDB, and implemented JWT-based
+              authentication with role-based access control.
+            </dd>
+          </div>
+
+          <div>
+            <dt>Operational impact</dt>
+            <dd>
+              Contributed to a reported 40% reduction in manual
+              record-keeping effort and supported Red Hat Linux
+              deployment using NGINX for production hosting
+              and request routing.
+            </dd>
+          </div>
+        </dl>
+
+        <div class="tag-list">
+          <span>Angular</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+          <span>JWT</span>
+          <span>RBAC</span>
+          <span>Red Hat Linux</span>
+          <span>NGINX</span>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- PROJECT 05: MMY -->
+    <!-- <article class="project-card project-mmy">
+      <div class="project-number">05</div>
+
+      <div class="project-art art-mmy" aria-hidden="true">
+        <div class="mmy-window">
+          <div class="mmy-window-header">
+            <span>MMY</span>
+            <span>API SERVICES</span>
+          </div>
+
+          <div class="mmy-window-body">
+            <div class="mmy-api-line">
+              <span>GET</span>
+              <i></i>
+            </div>
+
+            <div class="mmy-api-line">
+              <span>POST</span>
+              <i></i>
+            </div>
+
+            <div class="mmy-api-line">
+              <span>PUT</span>
+              <i></i>
+            </div>
+
+            <div class="mmy-database">
+              <span>SQL SERVER</span>
+              <span>NGINX</span>
+              <span>ANGULAR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <p class="project-type">
+          Business application · Backend development
+        </p>
+
+        <h3>MMY</h3>
+
+        <p class="project-description">
+          Business application development focused on reliable
+          RESTful services, efficient database access, and
+          production deployment support.
+        </p>
+
+        <dl class="project-case-study">
+          <div>
+            <dt>Scope</dt>
+            <dd>
+              Developed and maintained RESTful APIs supporting
+              business application workflows.
+            </dd>
+          </div>
+
+          <div>
+            <dt>Engineering solution</dt>
+            <dd>
+              Implemented backend services using C# and
+              ASP.NET Core MVC, with SQL Server integration
+              for application data operations.
+            </dd>
+          </div>
+
+          <div>
+            <dt>Deployment contribution</dt>
+            <dd>
+              Optimized SQL Server data access and supported
+              Linux deployments with NGINX reverse-proxy
+              configuration.
+            </dd>
+          </div>
+        </dl>
+
+        <div class="tag-list">
+          <span>.NET Core</span>
+          <span>ASP.NET Core MVC</span>
+          <span>C#</span>
+          <span>SQL Server</span>
+          <span>Angular</span>
+          <span>Linux</span>
+          <span>NGINX</span>
+        </div>
+      </div>
+    </article> -->
+
+  </div>
+
+  <div class="projects-cta">
+    <p>Want to explore my code and professional background?</p>
+
+    <div>
+      <a
+        class="text-link"
+        href="https://github.com/snehalchauhan17"
+        target="_blank"
+        rel="noopener noreferrer">
+        Visit GitHub <span aria-hidden="true">↗</span>
+      </a>
+
+      <a
+        class="text-link"
+        href="https://www.linkedin.com/in/snehal-chauhan16"
+        target="_blank"
+        rel="noopener noreferrer">
+        View LinkedIn <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+  <!-- WORKFORCE360 CASE STUDY -->
+
+
+  <section class="skills section-shell" aria-labelledby="skills-heading">
+    <div class="skills-intro">
+      <p class="eyebrow">05 / Technical toolkit</p>
+      <h2 id="skills-heading">A practical,<br />product-ready stack.</h2>
+    </div>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <p>Languages</p>
+        <div><span>C#</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span></div>
+      </div>
+      <div class="skill-group">
+        <p>Frameworks</p>
+        <div><span>Angular</span><span>.NET Core</span><span>.NET 8</span><span>ASP.NET Core MVC</span><span>Node.js</span></div>
+      </div>
+      <div class="skill-group">
+        <p>Architecture &amp; data</p>
+        <div><span>Microservices</span><span>Clean Architecture</span><span>SOLID</span><span>SQL Server</span><span>MongoDB</span><span>Dapper</span><span>EF Core</span></div>
+      </div>
+      <div class="skill-group">
+        <p>Platform &amp; tools</p>
+        <div><span>Git</span><span>Linux</span><span>NGINX</span><span>Azure DevOps</span><span>Bootstrap</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section-shell" aria-labelledby="contact-heading">
+    <div class="contact-orbit" aria-hidden="true"></div>
+    <p class="eyebrow">06 / Contact</p>
+    <h2 id="contact-heading">Looking for a Software Developer?<br /><span>Let's talk.</span></h2>
+    <p class="contact-copy">For software engineering opportunities, review my profiles or email me directly.</p>
+    <div class="contact-actions">
+      <a class="button button-primary" href="mailto:snehalnchauhan@gmail.com">Email Snehal <span aria-hidden="true">↗</span></a>
+      <a class="button button-secondary" href="https://github.com/snehalchauhan17" target="_blank" rel="noopener">GitHub profile <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="contact-links">
+      <a href="https://leetcode.com/u/snehalchauhan/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode profile">LeetCode <span aria-hidden="true">↗</span></a>
+      <a href="mailto:snehalnchauhan@gmail.com">snehalnchauhan@gmail.com</a>
+      <a href="tel:+918160544460">+91 81605 44460</a>
+      <a href="https://www.linkedin.com/in/snehal-chauhan16" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      <a href="https://github.com/snehalchauhan17" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer section-shell">
+  <a class="brand" href="#home" aria-label="Back to top">
+    <span class="brand-mark" aria-hidden="true">SC</span>
+    <span>Snehal Chauhan</span>
+  </a>
+  <p>Software Developer · {{ currentYear }}</p>
+  <a class="back-to-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+</footer>
