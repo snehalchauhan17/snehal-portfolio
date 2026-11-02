@@ -58,14 +58,15 @@
     <div class="hero-visual">
   <div class="photo-glow"></div>
 
-  <div class="profile-frame">
-    <img
-       src="/Images/profile.png"
-      alt="Snehal Chauhan - .NET Software Developer"
-      class="profile-image"
-    />
-  </div>
-
+ <div class="profile-frame">
+  <img
+    src="/Images/profile.png"
+    alt="Snehal Chauhan - .NET Software Developer"
+    class="profile-image"
+    draggable="false"
+    (contextmenu)="$event.preventDefault()"
+  />
+</div>
   <div class="floating-tag tag-api">ASP.NET Core</div>
   <div class="floating-tag tag-dotnet">C# / .NET</div>
   <div class="floating-tag tag-angular">Angular</div>
